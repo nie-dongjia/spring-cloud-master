@@ -9,8 +9,8 @@
 	<description>spring-cloud-master</description>
 	<modules>
 		<module>eureka-server</module>
-    <module>ucenter-provider</module>
-    <module>ucenter-ribbon</module>
+	    <module>ucenter-provider</module>
+	    <module>ucenter-ribbon</module>
   </modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
