@@ -13,6 +13,7 @@
 	    <module>sc-ucenter-ribbon</module>
 	    <module>sc-order-center</module>
 	    <module>sc-pay-center</module>
+	    <module>sc-eureka-feign-client</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
