@@ -1,0 +1,36 @@
+
+spring:
+    profiles:
+        active: dev
+
+
+## 该配置节点为独立的节点，有很多同学容易将这个配置放在spring的节点下，导致配置无法被识别
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  config-location: classpath:mybatis-config.xml
+  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.djn.cn.op.business.center.*.entity
+  # 注意：对应实体类的路径
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+#mapper
+#mappers 多个接口时逗号隔开
+mapper:
+ mappers: com.djn.cn.op.business.center.framework.util.MyMapper
+ mapper: 
+   not-empty: false
+   identity: MYSQL
+
+
+
+
+
+
+
+
+
