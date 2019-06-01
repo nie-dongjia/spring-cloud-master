@@ -8,9 +8,9 @@
 	<name>spring-cloud-master</name>
 	<description>spring-cloud-master</description>
 	<modules>
-		<module>eureka-server</module>
-	    <module>ucenter-provider</module>
-	    <module>ucenter-ribbon</module>
+		<module>sc-eureka-server</module>
+	    <module>sc-ucenter-provider</module>
+	    <module>sc-ucenter-ribbon</module>
   </modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
