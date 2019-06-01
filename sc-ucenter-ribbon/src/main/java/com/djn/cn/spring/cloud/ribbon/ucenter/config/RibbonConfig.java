@@ -1,4 +1,10 @@
 package com.djn.cn.spring.cloud.ribbon.ucenter.config;
+
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
+
 /**
  * 
  * <b>类   名：</b>RibbonConfig<br/>
@@ -12,6 +18,11 @@ package com.djn.cn.spring.cloud.ribbon.ucenter.config;
  * @version   1.0<br/>
  *
  */
+@Configuration
 public class RibbonConfig {
-
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }

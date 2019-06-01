@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.djn.cn.spring.cloud.ribbon.ucenter.service.IHelloService;
-import com.djn.cn.spring.cloud.ribbon.ucenter.service.impl.HelloServiceImpl;
 
 /**
  * 

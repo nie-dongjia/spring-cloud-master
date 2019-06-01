@@ -11,7 +11,9 @@
 		<module>sc-eureka-server</module>
 	    <module>sc-ucenter-provider</module>
 	    <module>sc-ucenter-ribbon</module>
-    </modules>
+	    <module>sc-order-center</module>
+	    <module>sc-pay-center</module>
+	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
