@@ -5,6 +5,7 @@ eureka:
   instance:
     hostname: localhost
   client:
+ # 配 置eregisterWithEureka和 tchRegistry为 false ，防止自己注册自己
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
