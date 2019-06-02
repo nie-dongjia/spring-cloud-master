@@ -9,7 +9,7 @@ import com.djn.cn.spring.cloud.feign.client.config.FeignConfig;
 /**
  * 
  * <b>类   名：</b>EurekaClientFeign<br/>
- * <b>类描述：</b>EurekaClientFeign<br/>
+ * <b>类描述：</b>The interface Mdc product query feign api.<br/>
  * <b>创建人：</b>op.nie-dongjia<br/>
  * <b>创建时间：</b>2019年6月1日 下午11:00:11<br/>
  * <b>修改人：</b>op.nie-dongjia<br/>

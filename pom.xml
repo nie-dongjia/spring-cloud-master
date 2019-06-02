@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.djn.cn.spring.cloud</groupId>
 	<artifactId>spring-cloud-master</artifactId>
@@ -9,13 +10,19 @@
 	<description>spring-cloud-master</description>
 	<modules>
 		<module>sc-eureka-server</module>
-	    <module>sc-ucenter-provider</module>
-	    <module>sc-ucenter-ribbon</module>
-	    <module>sc-order-center</module>
-	    <module>sc-pay-center</module>
-	    <module>sc-eureka-feign-client</module>
-    <module>sc-ribbon-hystrix</module>
-  </modules>
+		<module>sc-ucenter-provider</module>
+		<module>sc-ucenter-ribbon</module>
+		<module>sc-order-center</module>
+		<module>sc-pay-center</module>
+		<module>sc-eureka-feign-client</module>
+		<module>sc-ribbon-hystrix</module>
+		<module>sc-gateway-zuul</module>
+		<module>sc-config-server</module>
+		<module>sc-config-client</module>
+		<module>sc-config-server-git</module>
+		<module>sc-zipkin</module>
+		<module>sc-monitor</module>
+	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -24,15 +31,15 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.5.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>1.5.3.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Brixton.SR6</version>
+				<version>Dalston.SR1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

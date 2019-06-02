@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.djn.cn.spring.cloud</groupId>
+    <artifactId>spring-cloud-master</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>sc-zipkin</artifactId>
+  <packaging>pom</packaging>
+  <name>sc-zipkin</name>
+  <description>链路追踪模块</description>
+  <modules>
+  	<module>sc-zipkin-server</module>
+    <module>sc-zipkin-user-service</module>
+    <module>sc-zipkin-gateway-service</module>
+    <module>sc-zipkin-mq-server</module>
+    <module>sc-zipkin-mq-user-service</module>
+    <module>sc-zipkin-mq-gateway-service</module>
+    <module>sc-zipkin-server-mysql</module>
+    <module>sc-zipkin-server-elasticsearch</module>
+    <module>sc-zipkin-mq-server-mysql</module>
+  </modules>
+</project>

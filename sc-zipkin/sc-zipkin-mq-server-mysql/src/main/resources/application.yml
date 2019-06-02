@@ -1,0 +1,26 @@
+eureka:
+  client:
+    serviceUrl:
+    # defaultZone 为默认的 Zone，来源于 AWS 的概念 .
+      defaultZone: http://localhost:8761/eureka/  # Eureka Server 的注册地址
+server:
+  port: 9600
+  
+spring:
+  application:
+    name: sc-zipkin-mq-server-mysql
+  rabbitmq: 
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://mysql.host:3306/DB_SC_Zipkin?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver     
+     
+
+    
+    
+    

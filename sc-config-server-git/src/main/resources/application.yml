@@ -1,0 +1,30 @@
+#spring: 
+#  cloud: 
+#   config: 
+#    server: 
+#      native: 
+#        search-locations: classpath:/shared
+#  profiles: 
+#    active: native 
+#  application:
+#    name: sc-config-server
+#     
+#server:
+#  port: 5001
+spring: 
+  cloud: 
+   config: 
+    server: 
+      git: 
+        uri: https://github.com/nie-dongjia/op-config-center
+        searchPaths: 
+        username: 
+        password: 
+  application:
+    name: sc-git-config-server
+     
+server:
+  port: 5001
+    
+    
+    

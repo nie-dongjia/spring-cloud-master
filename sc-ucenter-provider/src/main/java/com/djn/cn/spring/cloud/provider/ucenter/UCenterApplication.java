@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 
  * <b>类   名：</b>UCenterApplication<br/>
- * <b>类描述：</b>EurekaClient <br/>
+ * <b>类描述：</b>EurekaClient<br/>
  * <b>创建人：</b>op.nie-dongjia<br/>
- * <b>创建时间：</b>2019年6月1日 下午5:06:57<br/>
+ * <b>创建时间：</b>2020年2月5日 下午8:37:06<br/>
  * <b>修改人：</b>op.nie-dongjia<br/>
- * <b>修改时间：</b>2019年6月1日 下午5:06:57<br/>
+ * <b>修改时间：</b>2020年2月5日 下午8:37:06<br/>
  * <b>修改备注：</b><br/>
  *
- * @version   1.0<br/>
+ * @version   1.0.0<br/>
  *
  */
 @SpringBootApplication

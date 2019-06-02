@@ -1,0 +1,25 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 5000
+ 
+spring:
+  application:
+    name: sc-gateway-zuul
+
+zuul:
+  routes:
+    hiapi:
+     path: /hiapi/**
+     serviceId: ucenter-provider
+  prefix: /v1       
+     
+     
+     
+
+    
+    
+    
