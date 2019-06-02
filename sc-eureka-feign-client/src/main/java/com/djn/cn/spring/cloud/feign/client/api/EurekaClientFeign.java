@@ -19,8 +19,8 @@ import com.djn.cn.spring.cloud.feign.client.config.FeignConfig;
  * @version   1.0<br/>
  *
  */
-@FeignClient(value = "eureka-client",configuration = FeignConfig.class)
+@FeignClient(value = "ucenter-provider",configuration = FeignConfig.class)
 public interface EurekaClientFeign {
-    @RequestMapping(value = "/hi")
+    @RequestMapping(value = "/user")
     String sayHiFromClientEureka(@RequestParam(value = "name") String name);
 }
