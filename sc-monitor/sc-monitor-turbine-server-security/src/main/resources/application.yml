@@ -19,5 +19,14 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/        
-    
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    metadata-map:
+      user.name: admin
+      user.password: 123456
+
+## 安全配置
+security:
+  user:
+    name: admin
+    password: 123456
