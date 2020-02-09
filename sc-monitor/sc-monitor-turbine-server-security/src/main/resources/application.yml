@@ -1,0 +1,23 @@
+server:
+  port: 5000
+management: 
+  security: 
+    enabled: false 
+logging: 
+  file: "logs/sc-monitor-turbine-server-security.log"
+## spring 配置  
+spring:
+  application:
+    name: sc-monitor-turbine-server-security
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,activiti
+      turbine:
+        clusters: default
+        location: sc-monitor-turbine-service    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/        
+    

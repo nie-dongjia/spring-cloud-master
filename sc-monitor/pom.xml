@@ -17,5 +17,6 @@
     <module>sc-monitor-turbine-server</module>
     <module>sc-monitor-turbine-client-two</module>
     <module>sc-monitor-turbine-service</module>
+      <module>sc-monitor-turbine-server-security</module>
   </modules>
 </project>
