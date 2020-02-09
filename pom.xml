@@ -22,6 +22,7 @@
 		<module>sc-config-server-git</module>
 		<module>sc-zipkin</module>
 		<module>sc-monitor</module>
+		<module>sc-security</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
