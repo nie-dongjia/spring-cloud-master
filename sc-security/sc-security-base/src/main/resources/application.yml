@@ -6,4 +6,12 @@ spring:
     mode: HTML5
     encoding: UTF-8
     cache: false
-
+  datasource:
+    url: jdbc:mysql://mysql.host:3306/DB_SC_Security?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

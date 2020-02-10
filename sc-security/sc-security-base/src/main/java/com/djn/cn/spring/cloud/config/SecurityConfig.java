@@ -10,15 +10,13 @@
 package com.djn.cn.spring.cloud.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 /**
  * <b>类  名：</b>com.djn.cn.spring.cloud.config.SecurityConfig<br/>
@@ -33,15 +31,20 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
  */
 @EnableWebSecurity
 @Configuration
+@EnableGlobalMethodSecurity(prePostEnabled = true ) // 方法级别的安全支持
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 //        auth.inMemoryAuthentication()
 //                .withUser("nie-dongjia").password("123456").roles("USER");
 
-        auth.userDetailsService(userDetailsService());
+//        auth.userDetailsService(userDetailsService());
+        auth.userDetailsService(userDetailsService);
 
     }
+
+    @Autowired
+    private UserDetailsService userDetailsService;
     /**
      * userDetailsService  内存统一处理
      *
@@ -50,13 +53,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * @since 1.0.0
      * @author op.nie-dongjia  
      */
-    @Bean
-	public UserDetailsService userDetailsService() {
-		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager(); // 在内存中存放用户信息
-		manager.createUser(User.withUsername("nie-dongjia").password("123456").roles("USER").build());
-		manager.createUser(User.withUsername("admin").password("123456").roles("USER","ADMIN").build());
-		return manager;
-	}
+//    @Bean
+//	public UserDetailsService userDetailsService() {
+//		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager(); // 在内存中存放用户信息
+//		manager.createUser(User.withUsername("nie-dongjia").password("123456").roles("USER").build());
+//		manager.createUser(User.withUsername("admin").password("123456").roles("USER","ADMIN").build());
+//		return manager;
+//	}
 
 
     @Override
