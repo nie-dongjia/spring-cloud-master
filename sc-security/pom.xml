@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>sc-security-base</module>
+        <module>sc-security-auth-server</module>
+        <module>sc-security-auth-resource-service-hi</module>
     </modules>
 
 
