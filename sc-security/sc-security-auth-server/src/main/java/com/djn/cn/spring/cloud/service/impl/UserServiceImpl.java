@@ -30,15 +30,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserServiceImpl implements IUserService {
-
     private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-
     @Autowired
     private UserDAO userDAO;
-
     @Override
     public void create(User user) {
-        User existing = userDAO.findByUsername(user.getUsername());
         String hash = encoder.encode(user.getPassword());
         user.setPassword(hash);
         userDAO.save(user);

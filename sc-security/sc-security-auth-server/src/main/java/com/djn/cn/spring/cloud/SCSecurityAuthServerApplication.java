@@ -10,6 +10,9 @@
 package com.djn.cn.spring.cloud;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 
 /**
  * <b>类  名：</b>com.djn.cn.spring.cloud.SCSecurityAuthServerApplication<br/>
@@ -23,7 +26,9 @@ import org.springframework.boot.SpringApplication;
  * @version 1.0.0 <br/>
  *
  */
-
+@SpringBootApplication
+@EnableResourceServer
+@EnableEurekaClient
 public class SCSecurityAuthServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(SCSecurityAuthServerApplication.class,args);
