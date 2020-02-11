@@ -10,6 +10,8 @@
 package com.djn.cn.spring.cloud;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * <b>类  名：</b>com.djn.cn.spring.cloud.SCSecurityAuthResourceServiceHiApp<br/>
@@ -23,6 +25,8 @@ import org.springframework.boot.SpringApplication;
  * @version 1.0.0 <br/>
  *
  */
+@SpringBootApplication
+@EnableEurekaClient
 public class SCSecurityAuthResourceServiceHiApp {
     public static void main(String[] args) {
         SpringApplication.run(SCSecurityAuthResourceServiceHiApp.class,args);
