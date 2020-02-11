@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS DB_SC_Security_OAuth ;
 CREATE DATABASE DB_SC_Security_OAuth CHARACTER  SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 USE DB_SC_Security_OAuth;
@@ -159,9 +158,7 @@ CREATE TABLE `user_role` (
   `user_id` BIGINT(20) NOT NULL,
   `role_id` BIGINT(20) NOT NULL,
   KEY `FKa68196081fvovjhkek5m97n3y` (`role_id`),
-  KEY `FK859n2jvi8ivhui0rl0esws6o` (`user_id`),
-  CONSTRAINT `FK859n2jvi8ivhui0rl0esws6o` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`),
-  CONSTRAINT `FKa68196081fvovjhkek5m97n3y` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`)
+  KEY `FK859n2jvi8ivhui0rl0esws6o` (`user_id`)
 ) ENGINE=INNODB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
@@ -170,21 +167,3 @@ CREATE TABLE `user_role` (
 BEGIN;
 INSERT INTO `user_role` VALUES ('1', '1'), ('3', '2'), ('1', '2'), ('4', '2'), ('6', '1'), ('6', '2');
 COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,7 +3,8 @@ server:
   context-path: /uaa
 
 spring:
-  application: sc-security-auth-server
+  application:
+    name: sc-security-auth-server
   datasource:
     url: jdbc:mysql://mysql.host:3306/DB_SC_Security_OAuth?useUnicode=true&characterEncoding=UTF-8
     username: root

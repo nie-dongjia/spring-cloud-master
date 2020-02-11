@@ -16,6 +16,9 @@ http://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html
 ##   基础知识  
 查看代码 
 
+## 
+curl service-hi:123456@localhost:5000/uaa/oauth/token -d grant_type=password -d username=nie-dongjia -d password=123456
+
 
 
 
